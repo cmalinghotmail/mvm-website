@@ -1,12 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 
 interface Feature {
   icon: string
   title: string
   body: string
-  preview: React.ReactNode
+  preview: ReactNode
 }
 
 function VendorListPreview() {
