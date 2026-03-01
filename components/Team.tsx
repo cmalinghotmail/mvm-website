@@ -16,7 +16,7 @@ const consultants = [
     bio: 'Brede ervaring in vendor management en inkoop bij (semi-)publieke organisaties. Begeleidt implementaties van begin tot einde en zorgt dat het platform aansluit op uw dagelijkse praktijk.',
     email: 'info@myvendormanager.nl',
     linkedin: 'https://www.linkedin.com/in/%F0%9F%9A%80-antoinette-wieman-b693903/',
-    photo: '/antoinette-wieman.jpg',
+    photo: '/antoinette-wieman.png',
     initials: 'AW',
   },
 ]
@@ -38,11 +38,11 @@ export default function Team() {
             <div key={c.name} className="bg-white rounded-2xl border border-[#E2E8F0] shadow-sm overflow-hidden">
               <div className="flex flex-col sm:flex-row">
                 {/* Foto */}
-                <div className="sm:w-44 flex-shrink-0 min-h-[180px] sm:min-h-0 bg-[#EFF6FF] flex items-center justify-center overflow-hidden">
+                <div className="sm:w-44 flex-shrink-0 min-h-[180px] sm:min-h-0 bg-[#EFF6FF] overflow-hidden relative">
                   <img
                     src={c.photo}
                     alt={c.name}
-                    className="w-full h-full object-cover object-top"
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                     style={{ minHeight: '180px' }}
                     onError={(e) => {
                       const img = e.currentTarget
@@ -65,7 +65,7 @@ export default function Team() {
                     Uw contactpersoon
                   </div>
                   <h3 className="text-lg font-bold text-[#1A2E4A] mb-0.5">{c.name}</h3>
-                  <p className="text-sm text-[#64748B] mb-4">{c.title}</p>
+                  <p className="text-xs text-[#64748B] mb-4 whitespace-nowrap">{c.title}</p>
                   <p className="text-sm text-[#1E293B] leading-relaxed mb-5">{c.bio}</p>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                     <a

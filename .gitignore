@@ -16,3 +16,8 @@
 
 # Vercel
 .vercel
+
+# Claude Code / Playwright tijdelijke bestanden
+.playwright-mcp/
+*.png
+!public/**/*.png
