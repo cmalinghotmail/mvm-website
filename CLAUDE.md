@@ -60,8 +60,11 @@ Pas na de screenshot check markeer je een todo als `completed`.
 ## Assets
 
 - Foto's en afbeeldingen horen in `/public`
-- Gebruik `.jpg` voor foto's, `.png` wanneer transparantie of kwaliteit vereist is
-- Bestandsnamen in kebab-case, lowercase: `kees-aling.jpg`, `antoinette-wieman.png`
+- **Alleen `.jpg` voor foto's** — nooit `.png` voor portretfoto's of andere foto's
+- Bestandsnamen in kebab-case, lowercase: `kees-aling.jpg`, `antoinette-wieman.jpg`
+- **Maximale bestandsgrootte: 300KB per afbeelding** — grotere bestanden veroorzaken laadproblemen op mobiel
+- Controleer altijd de bestandsgrootte vóór gebruik: `ls -lh public/`
+- Bij twijfel: vraag de gebruiker het bestand te verkleinen via [squoosh.app](https://squoosh.app)
 
 ---
 

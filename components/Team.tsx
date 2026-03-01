@@ -16,7 +16,7 @@ const consultants = [
     bio: 'Brede ervaring in vendor management en inkoop bij (semi-)publieke organisaties. Begeleidt implementaties van begin tot einde en zorgt dat het platform aansluit op uw dagelijkse praktijk.',
     email: 'info@myvendormanager.nl',
     linkedin: 'https://www.linkedin.com/in/%F0%9F%9A%80-antoinette-wieman-b693903/',
-    photo: '/antoinette-wieman.png',
+    photo: '/antoinette-wieman.jpg',
     initials: 'AW',
   },
 ]
