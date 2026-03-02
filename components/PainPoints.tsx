@@ -15,6 +15,11 @@ export default function PainPoints() {
       title: 'Contracten verlopen zonder dat iemand het doorheeft',
       body: 'U betaalt al maanden voor een contract dat automatisch is verlengd. Of erger: de opzegtermijn is verstreken en u zit vast voor nog een jaar.',
     },
+    {
+      icon: '📋',
+      title: 'Als key contract manager het overzicht kwijtraken',
+      body: 'Wie heeft de laatste meeting gevoerd? Wat zijn de openstaande actiepunten? Welke SLA-verplichtingen lopen achter? Die informatie staat verspreid in e-mail, OneNote en de hoofden van collega\'s.',
+    },
   ]
 
   return (
@@ -23,10 +28,10 @@ export default function PainPoints() {
         <div className="text-center mb-14">
           <h2 className="text-[2rem] font-semibold text-[#1A2E4A] mb-4">Herkent u dit?</h2>
           <p className="text-lg text-[#64748B] max-w-xl mx-auto">
-            De drie meest gehoorde problemen bij contractmanagers in de (semi-)publieke sector.
+            De meest gehoorde problemen bij contract- en vendor managers in de (semi-)publieke sector.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {points.map((p) => (
             <div
               key={p.title}

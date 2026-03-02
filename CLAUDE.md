@@ -74,13 +74,17 @@ Na het afronden van een taak volg je altijd deze volgorde:
 
 1. **Screenshot check cyclus** doorlopen (zie boven) — desktop én mobile
 2. **Wacht op goedkeuring** van de gebruiker op `http://localhost:3000` vóór je commit of push uitvoert
-3. **Pas na expliciete goedkeuring** voer je de commit uit:
+3. **Verwijder tijdelijke screenshot `.png` bestanden** uit de root van het project vóór de commit:
+   ```bash
+   rm -f *.png
+   ```
+4. **Pas na expliciete goedkeuring** voer je de commit uit:
    ```bash
    git add <specifieke bestanden>
    git commit -m "beschrijving van de wijziging"
    git push
    ```
-4. **Vercel** pikt de push naar `main` automatisch op en deployt naar productie (~1-2 min)
+5. **Vercel** pikt de push naar `main` automatisch op en deployt naar productie (~1-2 min)
 
 > Nooit automatisch committen of pushen — altijd wachten op "akkoord" van de gebruiker.
 

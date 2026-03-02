@@ -262,6 +262,39 @@ function LocalAIPreview() {
   )
 }
 
+function Contract360Preview() {
+  return (
+    <div className="bg-white rounded-xl border border-[#E2E8F0] overflow-hidden text-xs">
+      <div className="px-4 py-2.5 bg-[#F8FAFC] border-b border-[#E2E8F0] flex items-center gap-2">
+        <span className="text-[#1A2E4A] font-semibold text-sm">Contract 360 — Hitachi Rail</span>
+        <span className="ml-auto bg-[#EF4444]/10 text-[#EF4444] px-2 py-0.5 rounded-full text-[10px] font-medium">2 open issues</span>
+      </div>
+      <div className="grid grid-cols-2 gap-2 p-3">
+        <div className="rounded-lg border border-[#E2E8F0] p-2.5">
+          <p className="text-[#94A3B8] mb-1">Laatste overleg</p>
+          <p className="text-[#1E293B] font-medium">24 feb · Kwartaalreview</p>
+          <p className="text-[#1EBCD4] mt-1">3 actiepunten</p>
+        </div>
+        <div className="rounded-lg border border-[#E2E8F0] p-2.5">
+          <p className="text-[#94A3B8] mb-1">Volgend overleg</p>
+          <p className="text-[#1E293B] font-medium">15 mrt · SLA-review</p>
+          <p className="text-[#64748B] mt-1">2 agendapunten</p>
+        </div>
+        <div className="rounded-lg border border-[#EF4444]/30 bg-[#EF4444]/5 p-2.5">
+          <p className="text-[#94A3B8] mb-1">Open issues</p>
+          <p className="text-[#EF4444] font-medium">SLA-vertraging fase 2</p>
+          <p className="text-[#64748B] mt-1">Hoog · vervaldatum 10 mrt</p>
+        </div>
+        <div className="rounded-lg border border-[#E2E8F0] p-2.5">
+          <p className="text-[#94A3B8] mb-1">Leveranciersscore</p>
+          <p className="text-[#1E293B] font-medium">3.8 / 5.0</p>
+          <p className="text-[#F97316] mt-1">▼ −0.4 t.o.v. vorige ronde</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const features: Feature[] = [
   {
     icon: '🏢',
@@ -304,6 +337,12 @@ const features: Feature[] = [
     title: 'Lokale AI-optie',
     body: 'Voor privacy-gevoelige omgevingen: de AI draait lokaal op uw eigen infrastructuur. Uw contractdata verlaat uw organisatie nooit — ook niet voor analyse.',
     preview: <LocalAIPreview />,
+  },
+  {
+    icon: '🔄',
+    title: 'Contract 360',
+    body: 'Het goto-scherm voor de key contract manager. Laatste en volgende overleggen, open issues, SLA-status, leveranciersscore en compliance — in één oogopslag.',
+    preview: <Contract360Preview />,
   },
 ]
 

@@ -14,8 +14,9 @@ export default function Hero() {
               <span className="text-[#1EBCD4]">uw organisatie</span> werkt
             </h1>
             <p className="text-lg text-[#64748B] leading-relaxed mb-8 max-w-lg">
-              Breng al uw leveranciers, contracten en complianceverplichtingen samen in één platform —
-              volledig ingericht op uw processen, in het Nederlands, gehost in Europa.
+              Of u nu een grote contractportefeuille bewaakt op afloop en compliance, of als key contract manager
+              één strategisch contract operationeel implementeert — MyVendorManager is ingericht op uw rol,
+              uw processen en uw organisatie.
             </p>
             <div className="flex items-center gap-4 flex-wrap">
               <a
